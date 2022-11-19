@@ -27,4 +27,36 @@ body{
     border-style:double;
     border-width: 0.5em;
     border-radius: 4em;
+    animation: navhover 1s infinite;
+}
+
+.pbordern{
+    border-color: rgb(255 121 198 	);
+    border-style:double;
+    border-width: 0.2em;
+    border-radius: 1em;
+}
+
+.pbordern:hover{
+    border-style:double;
+    border-width: 0.4em;
+    border-radius: 1em;
+    cursor: pointer;
+    animation: navhover 1s infinite;
+}
+
+@keyframes navhover{
+    0%{border-color: rgb(201, 17, 121);}
+    25% {border-color: rgb(255 121 198);}
+    50%{ border-color: rgb(201, 17, 121);}
+    75% {border-color: rgb(255 121 198);}
+    100%{border-color: rgb(201, 17, 121);}
+}
+
+.main-nav {
+    background-color: rgb(40 42 54); 
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction:row;
 }
